@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azure_AD", "Azure_AD\Azure_AD.csproj", "{A55F603A-48D6-4088-9E50-00FE69A95C90}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{F78E8911-9E3A-4628-901C-B69B8F2E99A9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{9A91A9C6-4938-43FF-8AB7-92205B124552}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{F8BA073F-57E8-459D-8291-F14AECFAFECB}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\AzureAD.json = PublishScripts\Templates\AzureAD.json
+		PublishScripts\Templates\AzureAD.param.dev.json = PublishScripts\Templates\AzureAD.param.dev.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A55F603A-48D6-4088-9E50-00FE69A95C90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A55F603A-48D6-4088-9E50-00FE69A95C90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A55F603A-48D6-4088-9E50-00FE69A95C90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A55F603A-48D6-4088-9E50-00FE69A95C90}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9A91A9C6-4938-43FF-8AB7-92205B124552} = {F78E8911-9E3A-4628-901C-B69B8F2E99A9}
+		{F8BA073F-57E8-459D-8291-F14AECFAFECB} = {F78E8911-9E3A-4628-901C-B69B8F2E99A9}
+	EndGlobalSection
+EndGlobal
